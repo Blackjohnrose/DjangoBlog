@@ -3,9 +3,15 @@
 {% block content %}
     <h1> blog home </h1>
         {% for item_post in post %}
-            <h3> {{ item_post.title }} </h3>
-            <p>By {{ item_post.auther }} on {{ item_post.date_post }}</p>
-            <p> {{ item_post.content }}</p>
-            <hr>
+            <article class="media content-section">
+              <div class="media-body">
+                <div class="article-metadata">
+                  <a class="mr-2" href="#">{{ item_post.author }}</a>
+                  <small class="text-muted">{{ item_post.date_posted }}</small>
+                </div>
+                <h2><a class="article-title" href="#">{{ item_post.title }}</a></h2>
+                <p class="article-content">{{ item_post.content }}</p>
+              </div>
+            </article>
         {% endfor %}
 {% endblock %}
