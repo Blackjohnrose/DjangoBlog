@@ -26,4 +26,4 @@ def home_view(request):
 
 def about_view(request):
 
-    return render(request, "blog/blog_about.html")
+    return render(request, "blog/blog_about.html", {'title': 'About'})
