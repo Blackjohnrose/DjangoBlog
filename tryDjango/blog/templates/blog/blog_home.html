@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    {% if title %}
-        <title>Django blog - {{ title }}</title>
-    {% else %}
-        <title>Django blog </title>
-    {% endif %}
-</head>
-<body>
+{% extends "blog/base.html" %}
+
+{% block content %}
     <h1> blog home </h1>
-    {% for item_post in post %}
-        <h3> {{ item_post.title }} </h3>
-        <p>By {{ item_post.auther }} on {{ item_post.date_post }}</p>
-        <p> {{ item_post.content }}</p>
-        <hr>
-    {% endfor %}
-</body>
-</html>
+        {% for item_post in post %}
+            <h3> {{ item_post.title }} </h3>
+            <p>By {{ item_post.auther }} on {{ item_post.date_post }}</p>
+            <p> {{ item_post.content }}</p>
+            <hr>
+        {% endfor %}
+{% endblock %}
