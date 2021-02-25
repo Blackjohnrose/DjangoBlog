@@ -21,7 +21,7 @@ def home_view(request):
         "post": post
     }
 
-    return render(request, "blog/blog_home.html", post)
+    return render(request, "blog/blog_home.html", context)
 
 
 def about_view(request):
