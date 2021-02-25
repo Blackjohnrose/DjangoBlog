@@ -18,7 +18,9 @@ post = [
 
 def home_view(request):
     context = {
-        "post": post
+        "post": post,
+        "title": "Home"
+
     }
 
     return render(request, "blog/blog_home.html", context)
