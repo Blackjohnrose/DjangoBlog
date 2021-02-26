@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 post = [
     {
@@ -17,6 +18,7 @@ post = [
 
 
 def home_view(request):
+    post = Post.objects.all()
     context = {
         "post": post,
         "title": "Home"
