@@ -2,3 +2,6 @@ tryDjango/tryDjango/__pycache__/
 tryDjango/blog/__pycache__/
 tryDjango/blog/migrations/__pycache__/
 tryDjango/blog/migrations/
+tryDjango/users/__pycache__/
+tryDjango/users/migrations/__pycache__/
+tryDjango/users/migrations/
