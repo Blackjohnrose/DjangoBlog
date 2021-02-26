@@ -8,4 +8,4 @@ def register_view(request):
         'form': form,
         'title': 'register'
     }
-    return render(request, 'users/register.html')
+    return render(request, 'users/register.html', context)
