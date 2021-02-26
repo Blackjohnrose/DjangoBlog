@@ -7,6 +7,7 @@ def register_view(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
+            form.save()
             username= form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username} !')
             return redirect('blog-home')
@@ -14,6 +15,6 @@ def register_view(request):
         form = UserCreationForm()
     context = {
         'form': form,
-        'title': 'register'
+        'title': 'Register'
     }
     return render(request, 'users/register.html', context)
