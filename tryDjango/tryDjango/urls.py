@@ -19,6 +19,6 @@ from users.views import register_view
 
 urlpatterns = [
 	path('', include('blog.urls')),
-    path('register/', register_view),
+    path('register/', register_view, name='register'),
     path('admin/', admin.site.urls),
 ]
