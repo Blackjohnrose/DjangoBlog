@@ -3,6 +3,7 @@
 {% block content %}
         {% for item_post in post %}
             <article class="media content-section">
+              <img class="rounded-circle article-img" src="{{ item_post.author.profileuser.image.url }}" alt="">
               <div class="media-body">
                 <div class="article-metadata">
                   <a class="mr-2" href="#">{{ item_post.author }}</a>
