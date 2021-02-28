@@ -20,8 +20,8 @@ def register_view(request):
 
 @login_required
 def profile_view(request):
-    u_form = UserUpdateForm()
-    p_form = ProfileUpdateForm()
+    u_form = UserUpdateForm(instance=request.user)
+    p_form = ProfileUpdateForm(instance=request.user.profileuser)
 
     context = {
         'u_form': u_form,
