@@ -15,7 +15,7 @@
     </div>
       <!-- FORM HERE -->
       <div class="content-section">
-        <form method="POST" enctype="multipart/from-data"> {% csrf_token %}
+        <form method="POST" enctype="multipart/form-data"> {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom bm-4">Update Profile</legend>
                 {{ u_form|crispy}}
