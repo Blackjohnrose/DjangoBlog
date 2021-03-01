@@ -6,3 +6,4 @@ tryDjango/users/__pycache__/
 tryDjango/users/migrations/__pycache__/
 tryDjango/users/migrations/
 media/
+post.json
