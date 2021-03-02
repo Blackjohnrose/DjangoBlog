@@ -1,7 +1,7 @@
 tryDjango/__pycache__/
 blog/__pycache__/
 blog/migrations/__pycache__/
-migrations/
+blog/migrations/
 users/__pycache__/
 users/migrations/__pycache__/
 users/migrations/
