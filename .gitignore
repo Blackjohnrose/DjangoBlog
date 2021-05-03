@@ -7,3 +7,4 @@ users/migrations/__pycache__/
 users/migrations/
 media/
 post.json
+requirements.txt
